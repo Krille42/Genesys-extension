@@ -1,0 +1,25 @@
+{
+   "manifest_version": 3,
+   "name": "Genesys Extension",
+   "description": "Base Level Extension",
+   "version": "1.0",
+   "permissions": [
+      "offscreen"
+   ],
+
+   "icons": {
+      "16": "img/icon-16.png",
+      "32": "img/icon-32.png",
+      "48": "img/icon-48.png",
+      "128": "img/icon-128.png"
+   },
+   "content_scripts": [
+      {
+        "js": ["script/content.js"],
+        "css": ["css/style.css"],
+        "matches": [
+          "https://apps.mypurecloud.ie/*"
+        ]
+      }
+   ]
+ }
