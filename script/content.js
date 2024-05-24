@@ -6,8 +6,6 @@
    setTimeout(() => {
 
       let myDocument = GetInnerDocument()
-
-      console.log(myDocument.title)
       
       setInterval(() => {
 
@@ -33,7 +31,7 @@
 
             }
 
-            if(myDocument.getElementsByClassName("data-cell").item(2*i).innerHTML.includes("-")) {
+            if(myDocument.getElementsByClassName("data-cell").item(2*i).children.item(0).innerHTML.includes("-")) {
 
                myDocument.getElementsByClassName("row-label").item(i).style.display = "none"
                myDocument.getElementsByClassName("data-cell").item(2*i).style.display = "none"
