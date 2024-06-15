@@ -9,12 +9,15 @@
       
       setInterval(() => {
 
-         myDocument.getElementsByClassName("widget-container").item(0).style.height = "auto";
-         myDocument.getElementsByClassName("widget-container").item(1).style.height = "auto";
-         myDocument.getElementsByClassName("widget-container").item(3).style.height = "180px";
+         let widgetContainer = myDocument.getElementsByClassName("widget-container")
+         let footer = myDocument.getElementsByClassName("analytics-ui-widget-display-footer")
 
-         myDocument.getElementsByClassName("analytics-ui-widget-display-footer").item(0).style.marginTop = "-250px";
-         myDocument.getElementsByClassName("analytics-ui-widget-display-footer").item(1).style.marginTop = "-250px";
+         widgetContainer.item(0).style.height = "auto";
+         widgetContainer.item(1).style.height = "auto";
+         widgetContainer.item(3).style.height = "180px";
+
+         footer.item(0).style.marginTop = "-250px";
+         footer.item(1).style.marginTop = "-250px";
 
          myDocument.getElementsByClassName("grid-sidebar").item(0).style.width = "400px";
 
